@@ -28,6 +28,6 @@ jobs:
           # 課題タイプを指定
           issuetype: Task
           # issuesのタイトルが要約になるように設定
-          summary: ${{ github.event.issue.title}}
+          # summary: ${{ github.event.issue.title}}
           # issuesの本文が説明になるように設定
           description: ${{ github.event.issue.body}}
