@@ -1,0 +1,48 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#447a50",
+    "statusBar.background": "#447a50"
+  },
+  "css.validate": true,
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoGuessEncoding": false,
+  "stylelint.enable": true,
+  "typescript.tsserver.trace": "verbose",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    //テキストファイルを.mdのマークダウン記法ファイルにすることで不要なオートフィルがオフの状態で作業可能にする設定
+    //この設定を全体にしてしまうとテキスト編集時以外のオートフィルが微妙。
+    //同様の設定をグローバルにも行っているので解除したい際はそちらも編集すること
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false
+  },
+  "scss.validate": false,
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
+    "editor.formatOnSave": false
+  },
+  "stylelint.autoFixOnSave": true,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    "editor.formatOnSave": true
+  },
+  //Setting for extension "insertNumber"
+  "insertnum.formatstr": "%d",
+  "insertnum.start": 0,
+  "insertnum.step": 1,
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}
