@@ -26,7 +26,7 @@ jobs:
           # 付けたいチケット名を選択(jiraのAPItokenのlabelに合わせる)
           project: SampleWithJira
           # 課題タイプを指定
-          issuetype: Task
+          issuetype: 未着手
           # issuesのタイトルが要約になるように設定
           # summary: ${{ github.event.issue.title}}
           # issuesの本文が説明になるように設定
