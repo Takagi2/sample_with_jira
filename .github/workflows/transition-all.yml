@@ -21,7 +21,7 @@ jobs:
       # プッシュされたコミットに記載された課題キーを抽出する
       - name: Find in commit messages
         id: find
-        uses: atlassian/gajira-find-issue-key@master
+        uses: Takagi2/gajira-find-issue-key-custom@master
         with:
           string: ${{ github.event.ref }}
 
