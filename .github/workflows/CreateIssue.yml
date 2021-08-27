@@ -21,13 +21,13 @@ jobs:
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
 
       - name: Jira Create issue
-        uses: atlassian/gajira-todo@master
+        uses: atlassian/gajira-create@master
         with:
           # 付けたいチケット名を選択(jiraのAPItokenのlabelに合わせる)
           project: SampleWithJira
           # 課題タイプを指定
-          issuetype: 未着手
+          issuetype: Task
           # issuesのタイトルが要約になるように設定
-          # summary: ${{ github.event.issue.title}}
+          summary: ${{ github.event.issue.title}}
           # issuesの本文が説明になるように設定
           description: ${{ github.event.issue.body}}
